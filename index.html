@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Ps/Aiファイル共有</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+    <!--
+        等間隔にコンテンツを配置したい場合、display:flexを指定することで再現できる。
+        display:flexを指定した要素の子要素にwidthを指定する。
+    -->
+
+    <header>
+        <div class="header_frame"><a class="header_content" href="">カテゴリー1</a></div>
+        <div class="header_frame"><a class="header_content" href="">カテゴリー2</a></div>
+        <div class="header_frame"><a class="header_content" href="">カテゴリー3</a></div>
+        <div class="header_frame"><a class="header_content search_button" href="">検索</a></div>
+    </header>
+
+    
+    <main>
+
+        <div class="category_header">カテゴリー1</div>
+    
+        <div class="data_preview_area">
+            <div class="data_preview_frame"><div class="data_preview_content">データのプレビュー</div></div>
+            <div class="data_preview_frame"><div class="data_preview_content">データのプレビュー</div></div>
+            <div class="data_preview_frame"><div class="data_preview_content">データのプレビュー</div></div>
+            <div class="data_preview_frame"><div class="data_preview_content">データのプレビュー</div></div>
+            <div class="data_preview_frame"><div class="data_preview_content">データのプレビュー</div></div>
+        </div>
+    
+        <div class="category_header">カテゴリー2</div>
+    
+        <div class="data_preview_area">
+            <div class="data_preview_frame"><div class="data_preview_content">データのプレビュー</div></div>
+            <div class="data_preview_frame"><div class="data_preview_content">データのプレビュー</div></div>
+            <div class="data_preview_frame"><div class="data_preview_content">データのプレビュー</div></div>
+            <div class="data_preview_frame"><div class="data_preview_content">データのプレビュー</div></div>
+            <div class="data_preview_frame"><div class="data_preview_content">データのプレビュー</div></div>
+        </div>
+
+
+        <div class="category_header">カテゴリー3</div>
+
+        <!--
+            display:flexが難しい場合はbootstrap のrowとcolでも再現できる。
+            CSSで直に指定するよりも自由度が低い代わりに、簡単にレイアウトを作ることができる
+            Bootstrapの使い方は http://www.tohoho-web.com/bootstrap/index.html を参照。
+        -->
+    
+        <div class="row my-2">
+            <div class="col"><div class="data_preview_content">データのプレビュー</div></div>
+            <div class="col"><div class="data_preview_content">データのプレビュー</div></div>
+            <div class="col"><div class="data_preview_content">データのプレビュー</div></div>
+            <div class="col"><div class="data_preview_content">データのプレビュー</div></div>
+            <div class="col"><div class="data_preview_content">データのプレビュー</div></div>
+        </div>
+
+
+
+
+    
+    </main>
+
+
+
+</body>
+</html>
+
